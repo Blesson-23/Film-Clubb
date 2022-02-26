@@ -60,8 +60,8 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕🐦 ', url='https://t.me/Troll_movie_suggestion_CG')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video=random.choice(PICS),
+        await message.reply_photo(
+            photo="https://telegra.ph/file/7e218e7bc97387a903ddb.jpg",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -104,8 +104,8 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💕', url='https://t.me/Troll_movie_suggestion_CG')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video=random.choice(PICS),
+        await message.reply_photo(
+            photo="https://telegra.ph/file/7e218e7bc97387a903ddb.jpg",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
