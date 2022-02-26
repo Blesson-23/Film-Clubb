@@ -23,13 +23,13 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('💠 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💠', url='https://t.me/+AMHw_K1wvOM3MTU9')
+                InlineKeyboardButton('💠 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💠', url='https://t.me/Troll_movie_suggestion_CG')
             ],
             [
-                InlineKeyboardButton('💠 𝙾𝚠𝚗𝚎𝚛 💠', url='https://t.me/albintko')
+                InlineKeyboardButton('💠 𝙾𝚠𝚗𝚎𝚛 💠', url='https://t.me/blesson_3')
             ],
             [
-                InlineKeyboardButton('💠 𝙶𝚛𝚘𝚞𝚙 💠', url='https://t.me/moviebus2')
+                InlineKeyboardButton('💠 𝙶𝚛𝚘𝚞𝚙 💠', url='https://t.me/cinemagalaxychat')
             ],
             [
                 InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help")
@@ -53,11 +53,11 @@ async def start(client, message):
             InlineKeyboardButton(' 𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 ', switch_inline_query_current_chat=''),
             InlineKeyboardButton(' 𝙰𝚋𝚘𝚞𝚝 ', callback_data='about')
             ],[
-            InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help'),
-            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙 ', url='https://t.me/moviebus2')
+            InlineKeyboardButton('𝙷𝙴𝙻𝙿🤞', callback_data='help'),
+            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙👾 ', url='https://t.me/cinemagalaxychat')
             ],[
-            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛 ', url='https://t.me/albintko'),
-            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
+            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛💕 ', url='https://t.me/blesson_3'),
+            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕🐦 ', url='https://t.me/Troll_movie_suggestion_CG')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
@@ -97,11 +97,11 @@ async def start(client, message):
             InlineKeyboardButton(' 𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 ', switch_inline_query_current_chat=''),
             InlineKeyboardButton(' 𝙰𝚋𝚘𝚞𝚝 ', callback_data='about')
             ],[
-            InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help'),
-            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙 ', url='https://t.me/moviebus2')
+            InlineKeyboardButton('𝙷𝙴𝙻𝙿🤞', callback_data='help'),
+            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙👾 ', url='https://t.me/cinemagalaxychat')
             ],[
-            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛 ', url='https://t.me/albintko'),
-            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
+            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛🐦 ', url='https://t.me/blesson_3'),
+            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💕', url='https://t.me/Troll_movie_suggestion_CG')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
