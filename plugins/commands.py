@@ -16,6 +16,12 @@ import json
 import base64
 logger = logging.getLogger(__name__)
 
+PHOTO = [
+    "https://telegra.ph/file/0ab51c4b741b127c84460.jpg",
+    "https://telegra.ph/file/84112e6bdfe196c0db730.jpg",
+    "https://telegra.ph/file/1e9f86abf56cc1e887144.jpg"
+]
+
 BATCH_FILES = {}
 
 @Client.on_message(filters.command("start"))
@@ -61,7 +67,7 @@ async def start(client, message):
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo="https://telegra.ph/file/7e218e7bc97387a903ddb.jpg",
+            photo=f"{random.choice(PHOTO)}",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -105,7 +111,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo="https://telegra.ph/file/7e218e7bc97387a903ddb.jpg",
+            photo=f"{random.choice(PHOTO)}",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
