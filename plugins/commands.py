@@ -66,6 +66,10 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕🐦 ', url='https://t.me/Troll_movie_suggestion_CG')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAIIgGImFJuYfbGligABsx5NjNpCVdsdpQACwwIAArnFkFfGR5pt0kCs6h4E")
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=f"{random.choice(PHOTO)}",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
