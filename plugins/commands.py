@@ -17,9 +17,9 @@ import base64
 logger = logging.getLogger(__name__)
 
 PHOTO = [
-    "https://telegra.ph/file/0ab51c4b741b127c84460.jpg",
-    "https://telegra.ph/file/84112e6bdfe196c0db730.jpg",
-    "https://telegra.ph/file/1e9f86abf56cc1e887144.jpg"
+    "https://telegra.ph/file/144acf4e57c8b41cb12f5.jpg",
+    "https://telegra.ph/file/59c641d6ae4529a217bad.jpg",
+    "https://telegra.ph/file/65ba7471ced0239b41387.jpg"
 ]
 
 BATCH_FILES = {}
@@ -57,13 +57,13 @@ async def start(client, message):
             InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton(' 𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton(' 𝙰𝚋𝚘𝚞𝚝 ', callback_data='about')
+            InlineKeyboardButton(' 𝙰𝚋𝚘𝚞𝚝📢', callback_data='about')
             ],[
-            InlineKeyboardButton('𝙷𝙴𝙻𝙿🤞', callback_data='help'),
-            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙👾 ', url='https://t.me/cinemagalaxychat')
+            InlineKeyboardButton('𝙷𝙴𝙻𝙿🍀', callback_data='help'),
+            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙🌀 ', url='https://t.me/cinemagalaxychat')
             ],[
-            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛💕 ', url='https://t.me/blesson_3'),
-            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕🐦 ', url='https://t.me/Troll_movie_suggestion_CG')
+            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛🍂 ', url='https://t.me/blesson_3'),
+            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕🤍 ', url='https://t.me/Troll_movie_suggestion_CG')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
@@ -107,11 +107,11 @@ async def start(client, message):
             InlineKeyboardButton(' 𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 ', switch_inline_query_current_chat=''),
             InlineKeyboardButton(' 𝙰𝚋𝚘𝚞𝚝 ', callback_data='about')
             ],[
-            InlineKeyboardButton('𝙷𝙴𝙻𝙿🤞', callback_data='help'),
-            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙👾 ', url='https://t.me/cinemagalaxychat')
+            InlineKeyboardButton('𝙷𝙴𝙻𝙿🍀', callback_data='help'),
+            InlineKeyboardButton(' 𝙶𝚛𝚘𝚞𝚙🌀 ', url='https://t.me/cinemagalaxychat')
             ],[
-            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛🐦 ', url='https://t.me/blesson_3'),
-            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💕', url='https://t.me/Troll_movie_suggestion_CG')
+            InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛🍂 ', url='https://t.me/blesson_3'),
+            InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🤍', url='https://t.me/Troll_movie_suggestion_CG')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
